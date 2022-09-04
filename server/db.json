@@ -1,0 +1,37 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Iphone 13 pro max - 128GB",
+        "description": "Good condition, used, working like new.",
+        "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7646381/large/f3d28ff5b6084747bbf512e0a290a330.png",
+        "price": "3000",
+        "city": "Herzliya",
+        "phoneNumber": {
+          "areaCode": "054",
+          "number" : "5732584"
+        },
+        "datePublished": "2022-08-16T16:59:16.495Z"
+      },
+      {
+        "id": 2,
+        "name": "Playstation 5",
+        "description": "First PS5 gen. Brand new - never opend",
+        "imageUrl": "https://www.gadgety.co.il/wp-content/themes/main/thumbs/2020/06/ps5-design.jpg",
+        "price": "2500",
+        "city": "Haifa",
+        "phoneNumber": "058-2731531",
+        "datePublished": "2022-09-03T16:59:16.495Z"
+      },
+      {
+        "id": 3,
+        "name": "Seat Ibiza FR 2021 model-Ref 1.9HP",
+        "description": "Got a tesla from work so looking to sell. Took care of her lice a psyco.",
+        "imageUrl": "https://www.cartube.co.il/media/showtime/storage/2021/04/15/337/main/02-seat-ibiza-fr-desire-red-h.jpg",
+        "price": "89000",
+        "city": "Jerusalem",
+        "phoneNumber": "050-5555666",
+        "datePublished": "2021-02-06T16:59:16.495Z"
+      }
+    ]
+  }
