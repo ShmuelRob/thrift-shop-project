@@ -2,5 +2,5 @@
 <button (click)="sortByDate()">Sort By Date</button>
 
 <div *ngFor="let prod of productList">
-    <item [item]="prod" (ondelete)="onItemDeleteHandler($event)"></item>
+    <item [product]="prod" (ondelete)="onItemDeleteHandler($event)"></item>
 </div>

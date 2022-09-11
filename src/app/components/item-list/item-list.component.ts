@@ -19,6 +19,8 @@ export class ItemListComponent implements OnInit {
 
   ngOnInit(): void {
     this.context.get().subscribe(res => this.productList = res as Product[]);
+    // this.context.get().subscribe(res => console.table(res));
+    // console.table(this.productList);
   }
 
 
@@ -42,12 +44,12 @@ export class ItemListComponent implements OnInit {
 
   sortByDate() {
     if(this.sortByDateAsc === true){
-      this.productList.sort((a, b) => <any>new Date(a.datePublished) - <any>new Date(b.datePublished));
+      this.productList.sort((a, b) => <any>new Date(a.publishDate) - <any>new Date(b.publishDate));
       this.sortByDateAsc = false;
       this.sortByPriceAsc = true;
     }
     else{
-      this.productList.sort((a, b) => <any>new Date(b.datePublished) - <any>new Date(a.datePublished));
+      this.productList.sort((a, b) => <any>new Date(b.publishDate) - <any>new Date(a.publishDate));
       this.sortByDateAsc = true;
       this.sortByPriceAsc = true;
     }

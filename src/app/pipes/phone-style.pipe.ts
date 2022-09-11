@@ -7,7 +7,7 @@ import Phone from 'src/models/phone.type';
 export class PhoneStylePipe implements PipeTransform {
 
   transform(value: Phone): string {
-    return `${value.areaCode}-${value.number}`;
+    return `0${value.areaCode}-${value.number}`;
   }
 
 }

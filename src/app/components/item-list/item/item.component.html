@@ -1,1 +1,10 @@
-<p>item works!</p>
+<div>
+  <img [src]="product.imageUrl" />
+  <h2 highlight>{{ product.name }}</h2>
+  <p>{{ product.publishDate | date: "dd/MM/yyyy, hh:mm a" }}</p>
+  <h3>{{ product.price | shekel }}</h3>
+  <p>{{ product.phoneNumber | phoneStyle }}</p>
+  <button (click)="goToDetails(product.id)">details</button>
+  <button (click)="buy(product.id)">buy</button>
+  <br />
+</div>

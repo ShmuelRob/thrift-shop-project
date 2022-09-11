@@ -1,4 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import Product from 'src/models/product.model';
+import { Router } from "@angular/router";
+import { ContextService } from './../../../services/context.service';
+// import { HighlightDirective } from "../../../directives/highlight.directive";
 
 @Component({
   selector: 'item',
@@ -7,11 +11,23 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  @Input() item: any;
   @Output() ondelete: EventEmitter<any> = new EventEmitter<any>();
-  constructor() { }
+  @Input() product!: Product;
+  constructor(private router: Router, private context: ContextService) {
+  }
 
   ngOnInit(): void {
+  }
+
+  goToDetails(id: number) {
+    this.router.navigateByUrl("details/" + id);
+  }
+
+  buy(id: number) {
+    this.context.delete(id).subscribe(data => {
+      this.ondelete.emit(this.product.id);
+      this.router.navigateByUrl('')
+    })
   }
 
 }

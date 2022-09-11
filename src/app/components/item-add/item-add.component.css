@@ -1,0 +1,16 @@
+.error{
+  color: red;
+}
+
+input.ng-valid[required]{
+  background-color: lightgreen;
+}
+input.ng-valid{
+  background-color: lightgreen;
+}
+input.ng-invalid{
+  background-color: lightcoral;
+}
+input.ng-dirty.ng-invalid{
+  background-color: lightcoral;
+}
